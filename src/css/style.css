@@ -39,6 +39,11 @@ body{
 
 .card .my-info .name{
     font-size: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2.5s steps(17) infinite alternate,
+    blink 800ms steps(13) infinite normal;
+    border-right: 2px solid black;
 }
 
 .card .my-info .role{
@@ -140,3 +145,22 @@ body{
 .social .github{
     background-color: #f27e50;
 }
+
+
+
+@keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 69.3%;
+    }
+  }
+  @keyframes blink {
+    from {
+      border-color: white;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
